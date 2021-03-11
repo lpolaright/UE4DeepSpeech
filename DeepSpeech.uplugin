@@ -9,7 +9,7 @@
 	"CreatedByURL": "",
 	"DocsURL": "https://github.com/lpolaright/UE4DeepSpeech",
 	"MarketplaceURL": "",
-	"SupportURL": "",
+	"SupportURL": "https://github.com/lpolaright/UE4DeepSpeech/issues",
 	"EngineVersion": "4.26.0",
 	"CanContainContent": true,
 	"Installed": true,
