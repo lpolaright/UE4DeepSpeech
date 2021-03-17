@@ -34,7 +34,7 @@ bool FDeepSpeechWorker::Init()
 uint32 FDeepSpeechWorker::Run()
 {
 	while (bRunningWorker) {
-		char* tempResult = DS_SpeechToText(context, (const short*)voiceBuffer.GetData(), voiceBuffer.Num() / 2);
+		char* tempResult = DS_SpeechToText(context, (const short*)voiceBuffer.GetData(), (voiceBuffer.Num() / 2) - 1);
 		result = FString(tempResult);
 		voiceBuffer.Empty();
 		UE_LOG(LogTemp, Warning, TEXT("Changing run thread to false, and result: %s"), result.GetCharArray().GetData());
